@@ -2,10 +2,10 @@
 # this repository contains the full copyright notices and license terms.
 
 from trytond.pool import Pool
-from .party import *
+from . import party
 
 
 def register():
     Pool.register(
-        Party,
+        party.Party,
         module='party_lastname', type_='model')

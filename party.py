@@ -8,8 +8,7 @@ from trytond.pyson import Eval
 __all__ = ['Party',]
 
 
-class Party:
-    __metaclass__ = PoolMeta
+class Party(metaclass=PoolMeta):
     __name__ = 'party.party'
 
     last_name = fields.Char('Last name', select=True,
