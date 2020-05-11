@@ -1,7 +1,7 @@
 trytond_party_last_name
 =======================
 
-Add last_name field to party module
+Add last_name field to party.
 
 
 Installing
