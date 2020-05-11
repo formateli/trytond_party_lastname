@@ -7,7 +7,7 @@ Add last_name field to party.
 Installing
 ----------
 
-See INSTALL
+python3 setup.py install
 
 Support
 -------
@@ -15,10 +15,10 @@ Support
 If you encounter any problems with Tryton, please don't hesitate to ask
 questions on the Tryton bug tracker, mailing list, wiki or IRC channel:
 
-  http://bugs.tryton.org/
-  http://groups.tryton.org/
-  http://wiki.tryton.org/
-  irc://irc.freenode.net/tryton
+    * http://bugs.tryton.org/
+    * http://groups.tryton.org/
+    * http://wiki.tryton.org/
+    * irc://irc.freenode.net/tryton
 
 License
 -------
