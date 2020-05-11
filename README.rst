@@ -7,18 +7,19 @@ Add last_name field to party.
 Installing
 ----------
 
-python3 setup.py install
+Drop 'trytond_party_lastname' folder on 'tryrond/modules/' and
+update Tryton database.
 
 Support
 -------
 
-If you encounter any problems with Tryton, please don't hesitate to ask
-questions on the Tryton bug tracker, mailing list, wiki or IRC channel:
+For Tryton framework:
 
-    * http://bugs.tryton.org/
-    * http://groups.tryton.org/
-    * http://wiki.tryton.org/
-    * irc://irc.freenode.net/tryton
+    * https://tryton.org/
+
+For this module
+
+    * https://github.com/formateli/trytond_party_lastname
 
 License
 -------
