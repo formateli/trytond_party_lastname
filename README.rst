@@ -33,4 +33,5 @@ See COPYRIGHT
 
 For more information please visit the Tryton web site:
 
-  http://www.tryton.org/
+    * http://www.tryton.org/
+    * https://formateli.com
