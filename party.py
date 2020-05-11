@@ -1,11 +1,10 @@
 # This file is part of Tryton.  The COPYRIGHT file at the top level of
 # this repository contains the full copyright notices and license terms.
-
 from trytond.pool import PoolMeta
 from trytond.model import fields
 from trytond.pyson import Eval
 
-__all__ = ['Party',]
+__all__ = ['Party']
 
 
 class Party(metaclass=PoolMeta):
@@ -32,6 +31,6 @@ class Party(metaclass=PoolMeta):
     def search_rec_name(cls, name, clause):
         res = super(Party, cls).search_rec_name(name, clause)
         res.append(
-                ('last_name',) + tuple(clause[1:])
+            ('last_name',) + tuple(clause[1:])
             )
         return res
