@@ -31,7 +31,7 @@ Copyright
 See COPYRIGHT
 
 
-For more information please visit the Tryton web site:
+For more information please visit:
 
     * http://www.tryton.org/
     * https://formateli.com
