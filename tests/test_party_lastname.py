@@ -32,6 +32,15 @@ class PartyLastnameTestCase(ModuleTestCase):
         self.assertEqual(party_ln.full_name, 'With Last Name')
         self.assertEqual(party_ln.rec_name, 'With Last Name')
 
+        parties = Party.search([('rec_name', 'like', '%Just%')])
+        self.assertEqual(len(parties), 1)
+        self.assertEqual(parties[0].name, party.name)
+        parties = Party.search([('rec_name', 'like', '%Last%')])
+        self.assertEqual(len(parties), 1)
+        self.assertEqual(parties[0].name, party_ln.name)
+        parties = Party.search([('rec_name', 'like', '%Name%')])
+        self.assertEqual(len(parties), 2)
+
 
 def suite():
     suite = trytond.tests.test_tryton.suite()
