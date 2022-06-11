@@ -43,8 +43,4 @@ class PartyLastnameTestCase(ModuleTestCase):
         self.assertEqual(len(parties), 2)
 
 
-def suite():
-    suite = trytond.tests.test_tryton.suite()
-    suite.addTests(unittest.TestLoader().loadTestsFromTestCase(
-        PartyLastnameTestCase))
-    return suite
+del ModuleTestCase

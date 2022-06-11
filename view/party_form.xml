@@ -2,8 +2,8 @@
 <!-- This file is part of party_last_name module.
 The COPYRIGHT file at the top level of this repository contains
 the full copyright notices and license terms. -->
-<data>
-    <xpath expr="/form/field[@name='name']" position="after">
+<data>    
+    <xpath expr="/form/group/field[@name='name']" position="after">
         <label name="last_name"/>
         <field name="last_name"/>
     </xpath>
