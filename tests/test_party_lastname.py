@@ -17,6 +17,7 @@ class PartyLastnameTestCase(ModuleTestCase):
         Party = pool.get('party.party')
 
         party, = Party.create([{
+
                     'name': 'Just Name',
                     }])
         self.assertEqual(party.name, 'Just Name')
