@@ -9,7 +9,7 @@ from trytond.pyson import Eval
 class Party(metaclass=PoolMeta):
     __name__ = 'party.party'
 
-    last_name = fields.Char('Last name', select=True,
+    last_name = fields.Char('Last name', strip=False,
         states={
             'readonly': ~Eval('active', True),
         }, depends=['active'])
