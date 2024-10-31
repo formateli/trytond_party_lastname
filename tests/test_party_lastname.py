@@ -17,6 +17,7 @@ class PartyLastnameTestCase(ModuleTestCase):
         Party = pool.get('party.party')
 
         party, = Party.create([{
+
                     'name': 'Just Name',
                     }])
         self.assertEqual(party.name, 'Just Name')
@@ -43,8 +44,4 @@ class PartyLastnameTestCase(ModuleTestCase):
         self.assertEqual(len(parties), 2)
 
 
-def suite():
-    suite = trytond.tests.test_tryton.suite()
-    suite.addTests(unittest.TestLoader().loadTestsFromTestCase(
-        PartyLastnameTestCase))
-    return suite
+del ModuleTestCase
